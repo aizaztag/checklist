@@ -8,6 +8,7 @@ class PageController extends Controller
 {
     public function welcome()
     {
+
         $page = Page::findOrFail(1); // Welcome page
 
         return view('page', compact('page'));
